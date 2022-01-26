@@ -1,4 +1,4 @@
-FROM rocker/tidyverse::4.1.2
+FROM rocker/tidyverse:4.1.2
 
 ADD ./metar_deps /home/metar
 

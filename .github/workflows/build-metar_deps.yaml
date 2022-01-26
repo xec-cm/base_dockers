@@ -1,6 +1,9 @@
 on:
   schedule:
     - cron: '0 10 * * 1'
+  push:
+    paths:
+      - 'metar_deps/**'
 
 name: build-metar_deps
 

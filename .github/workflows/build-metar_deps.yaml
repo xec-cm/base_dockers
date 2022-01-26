@@ -11,8 +11,6 @@ name: build-metar_deps
 jobs:
   build-push:
     runs-on: ubuntu-18.04
-    env:
-      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
 
     steps:
       - name: Chekout base_dockers

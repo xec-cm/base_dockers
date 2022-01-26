@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - 'metar_deps/**'
+      - '.github/workflows/**metar_deps**'
 
 name: build-metar_deps
 

@@ -18,6 +18,4 @@ RUN apt-get update && apt-get install -y zlib1g-dev \
 ADD ./metar_deps /home/metar_deps
 
 RUN R -e "devtools::install_cran('pak')"
-RUN R -e "pak::local_install('/home/metar_deps', ask = FALSE)"
-
-
+RUN R -e "pak::local_install('/home/metar_deps', ask = FALSE, dependencies = TRUE)"
